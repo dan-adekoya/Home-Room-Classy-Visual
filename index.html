@@ -2,58 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Room homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
 </head>
-<body>
-  Home
-  Shop
-  About
-  Contact
-
-  Discover innovative ways to decorate
-
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form andnfunction in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
-
-  Shop now
-
-  We are available all across the globe
-
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
-
-  Shop now
-
-  Manufactured with the best materials
-
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-  experience in this industry, we understand what customers want for their home and office.
-
-  Shop now
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="bg">
+  <div class="slider"></div>
+  <div class="slider2">
+    <h1>room.</h1>
   </div>
+  <!-- NAV -->
+  <nav>
+    <svg class="burger" width="20" height="14"><path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="#FFF" fill-rule="evenodd"/></svg>
+    <div class="logo"><img src="./images/logo.svg" alt="" srcset=""></div>
+    <ul>
+      <svg class="close" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z" fill="#000" fill-rule="evenodd" opacity=".201"/></svg>
+      <li><a href="#">home</a></li>
+      <li><a href="#">shop</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">contact</a></li>
+    </ul>
+  </nav> 
+  <div class="container">
+    <div class="header">
+      
+      <!-- PAGES -->
+      <div class="page1" id="page1">
+        <img class="main" src="./images/desktop-image-hero-1.jpg" alt="" srcset="">
+        <div class="content">
+          <div class="ev">
+            <h1 class="evv">Discover innovative ways to decorate</h1>
+          </div>
+
+          <div class="ev">
+            <p class="evv">
+              We provide unmatched quality, comfort, and style for property owners across the country. 
+              Our experts combine form andnfunction in bringing your vision to life. Create a room in your 
+              own style with our collection and make your property a reflection of you and what you love.
+            </p>
+          </div>
+          <div class="ev ev2">
+            <button class="evv">SHOP NOW <img src="./images/icon-arrow.svg" alt=""></button>
+          </div>
+
+          <div class="arrows">
+            <a href="#page3"><img src="./images/icon-angle-left.svg" alt=""></a><a href="#page2"><img src="./images/icon-angle-right.svg" alt=""></a>
+          </div>
+          <div class="arrows2">
+            <a href="#page3"><img src="./images/icon-angle-left.svg" alt=""></a><a href="#page2"><img src="./images/icon-angle-right.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page1" id="page2">
+        <img class="main" src="./images/desktop-image-hero-2.jpg" alt="" srcset="">
+        <div class="content">
+          <div class="ev">
+            <h1>We are available all across the globe</h1>
+          </div>
+          <div class="ev">
+            <p>
+              With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+              Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+              store locator. Any questions? Don't hesitate to contact us today.
+            </p>
+          </div>
+          <div class="ev ev2">
+            <button>SHOP NOW <img src="./images/icon-arrow.svg" alt=""></button>
+          </div>
+
+          <div class="arrows">
+            <a href="#page1"><img src="./images/icon-angle-left.svg" alt=""></a><a href="#page3"><img src="./images/icon-angle-right.svg" alt=""></a>
+          </div>
+          <div class="arrows2">
+            <a href="#page1"><img src="./images/icon-angle-left.svg" alt=""></a><a href="#page3"><img src="./images/icon-angle-right.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page1" id="page3">
+        <img class="main" src="./images/desktop-image-hero-3.jpg" alt="" srcset="">
+        <div class="content">
+          <h1>Manufactured with the best materials</h1>
+          <p>
+            Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+            experience in this industry, we understand what customers want for their home and office.
+          </p>
+          <button>SHOP NOW <img src="./images/icon-arrow.svg" alt=""></button>
+
+          <div class="arrows">
+            <a href="#page2"><img src="./images/icon-angle-left.svg" alt=""></a><a href="#page1"><img src="./images/icon-angle-right.svg" alt=""></a>
+          </div>
+          <div class="arrows2">
+            <a href="#page2"><img src="./images/icon-angle-left.svg" alt=""></a><a href="#page1"><img src="./images/icon-angle-right.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <img src="./images/image-about-dark.jpg" alt="">
+      <div class="c">
+        <h6>ABOUT OUR FURNITURE</h6>
+        <p>
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+      <img src="./images/image-about-light.jpg" alt="">
+    </div>
+  </div>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script>
+      document.querySelector('.burger').addEventListener('click', () => {
+        document.querySelector('ul').classList.toggle('open')
+        document.querySelector('.container').classList.toggle('open')
+        document.querySelector('body').classList.toggle('open')
+      })
+      document.querySelector('.close').addEventListener('click', () => {
+        document.querySelector('ul').classList.toggle('open')
+        document.querySelector('.container').classList.toggle('open')
+        document.querySelector('body').classList.toggle('open')
+      })
+
+
+      //GSAP
+      let tl =  gsap.timeline({defaults: {ease: "expo.out"}})
+
+      tl.to('.slider', 2, {
+        y: '-100%',
+        delay: 1
+      })
+      tl.to('.slider2', 2, {
+        y: '-100%'
+      }, "-=1.7")
+      tl.from('.main', 1, {
+        x: '-100%',
+      }, '-=1.4')
+      tl.from('.evv', .7, {
+        y: "-100%",
+      })
+      tl.to('.bg', .2, {
+        background: "black"
+      })
+      tl.from('.arrows, .arrows2', 1, {
+        opacity: 0
+      })
+  </script>
 </body>
 </html>
+<!--   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
