@@ -11,7 +11,9 @@
 <body class="bg">
   <div class="slider"></div>
   <div class="slider2">
-    <h1>room.</h1>
+    <div class="ve">
+      <h1>room.</h1>
+    </div>  
   </div>
   <!-- NAV -->
   <nav>
@@ -137,6 +139,10 @@
       //GSAP
       let tl =  gsap.timeline({defaults: {ease: "expo.out"}})
 
+      tl.from('.slider2 h1', 1, {
+        y: '-100%',
+        delay: .8
+      })
       tl.to('.slider', 2, {
         y: '-100%',
         delay: 1
