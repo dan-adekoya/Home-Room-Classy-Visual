@@ -22,7 +22,7 @@ The designs were created to the following widths:
 
 - Font size: 12px
 
-### Font
+#### Font
 
 - Family: [Spartan](https://fonts.google.com/specimen/Spartan)
 - Weights: 500, 600, 700
