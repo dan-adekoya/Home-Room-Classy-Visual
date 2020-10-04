@@ -18,10 +18,14 @@ tl.from('.slider2 h1', 1, {
     y: '-100%',
     delay: .8
 })
+tl.to('.slider2 h1', 1, {
+    y: '-100%',
+    delay: .8
+})
 tl.to('.slider', 2, {
     y: '-100%',
     delay: 1
-})
+}, "-=1.9")
 tl.to('.slider2', 2, {
     y: '-100%'
 }, "-=1.7")
